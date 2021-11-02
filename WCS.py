@@ -12,7 +12,7 @@ dir = None # Working directory
 su_ext = '.su'
 obj_ext = '.o'
 manual_ext = '.msu'
-read_elf_path = "arm-none-eabi-readelf.exe" # You may need to enter the full path here
+read_elf_path = os.getenv('CY_TOOLS_PATHS','')+"/gcc/bin/arm-none-eabi-readelf.exe" # You may need to enter the full path here
 stdout_encoding = "utf-8"  # System dependant
 
 
